@@ -406,3 +406,22 @@ sudo dnf install -y httpd
 sudo chmod 777 -R /var/www/html/
 ```
 
+<br><br>
+
+# ③ GitHub Actionsによる自動デプロイ機能作成
+
+<br>
+
++ Secretsの登録
+
+GitHubのページから[Settings] > [Secrets and variables] > [Actions]の順に選択する。
+そして、[Secrets]タブを開き、[New repository secret]をクリックする。
+
+下記の[Name]と[Secret]を入力して、[Add secret]をクリックする。
+
+①で作成したローカルリポジトリに、下記のフォルダを作成する。
+
+```
+
+```
+

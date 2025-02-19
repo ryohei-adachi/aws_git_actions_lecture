@@ -434,11 +434,39 @@ GitHubのページから[Settings] > [Secrets and variables] > [Actions]の順�
 
 下記の[Name]と[Secret]を入力して、[Add secret]をクリックする。
 
+<br>
 
+| Name | Secret |
+| ---- | ---- |
+| EC2_HOST | AWS EC2のIPアドレス |
+| EC2_SSH_KEY | AWS EC2の秘密鍵(pemファイル)の中身 |
+| EC2_USER | "ec2-user"と入力 |
 
-①で作成したローカルリポジトリに、下記のフォルダを作成する。
+<br>
+
+AWS EC2の秘密鍵の入力については、余計な改行を含めないこと。
+
+<br>
+
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/9f1c05d8-74e6-4da0-bc58-982d36e9a95f">
+
+<br>
+
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/3230f2bd-bfcf-42d7-9c0a-b065a71652ff">
+
+<br>
+
++ ワークフローファイルの作成
+
+①で作成したローカルリポジトリに、「.github/workflows」フォルダを作成する。
+「.github/workflows」フォルダに「deploy.yml」というワークフローファイルを作成する。
+
+<br>
 
 ```
+└ .github/
+    └ workflows/
+        └ deploy.yml   #ワークフローファイル
 
 ```
 

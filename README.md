@@ -415,9 +415,26 @@ sudo chmod 777 -R /var/www/html/
 + Secretsの登録
 
 GitHubのページから[Settings] > [Secrets and variables] > [Actions]の順に選択する。
+
+<br>
+
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/7d663b7a-0461-4888-831b-a7211419dfeb">
+
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/c5008726-9497-4170-bf95-fb7b4aa1e555">
+
+<br>
+
 そして、[Secrets]タブを開き、[New repository secret]をクリックする。
 
+<br>
+
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/077edecc-b6bf-4bb7-8b66-340d4cc2a761">
+
+<br>
+
 下記の[Name]と[Secret]を入力して、[Add secret]をクリックする。
+
+
 
 ①で作成したローカルリポジトリに、下記のフォルダを作成する。
 

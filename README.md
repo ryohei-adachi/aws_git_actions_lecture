@@ -470,3 +470,53 @@ AWS EC2の秘密鍵の入力については、余計な改行を含めないこ�
 
 ```
 
+<br><br>
+
++ ワークファイルの中身の記載
+
+<br>
+
+「./github/workflows/deploy.yml」に下記の内容を記載して、保存する。
+
+<br>
+
+```
+name: Deploy to AWS EC2
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリチェックアウト
+        uses: actions/checkout@v4
+
+      - name: SSH設定
+        run: |
+          echo "${{ secrets.EC2_SSH_KEY }}" > private_key.pem
+          chmod 600 private_key.pem
+          mkdir ~/.ssh
+          ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+        
+      - name: EC2にHTML/CSSをデプロイ
+        run:
+          rsync -rlOtcv --delete -e "ssh -oStrictHostKeyChecking=no -i private_key.pem" ./web/ ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/html/
+        
+      - name: EC2でApacheを再起動（オプション）
+        run: |
+          ssh -i private_key.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "sudo systemctl restart httpd"
+```
+
+<br><br>
+
++ 本GitHubリポジトリからダウンロードした「web」フォルダーをダウンロードする
+
+
+<br>
+GitHubリポジトリ(aws_git_actions_lecture)の「<>Code」から「Download ZIP」をクリックする。
+
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/b461f977-5928-46d9-8003-e62199d6e15f">
+

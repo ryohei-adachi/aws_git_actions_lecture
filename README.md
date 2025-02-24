@@ -512,11 +512,47 @@ jobs:
 
 <br><br>
 
-+ 本GitHubリポジトリからダウンロードした「web」フォルダーをダウンロードする
++ 本GitHubリポジトリからダウンロードした「web」フォルダーをリポジトリに登録する
 
 
 <br>
 GitHubリポジトリ(aws_git_actions_lecture)の「<>Code」から「Download ZIP」をクリックする。
 
 <img width="70%" alt="image" src="https://github.com/user-attachments/assets/b461f977-5928-46d9-8003-e62199d6e15f">
+
+
+<br>
+
+ダウンロードした「web」フォルダをローカルリポジトリに配置する。
+
+<br>
+
+```
+├ .github/
+│   └ workflows/
+│       └ deploy.yml   #ワークフローファイル
+└ web/ ★配置
+   ├ index.html
+   ├ style.css
+   └ img/
+```
+
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/a1572388-45bf-4e4a-82f9-f321751b07b6">
+
+<br>
+
++ リモートリポジトリにプッシュする
+
+<br>
+
+```
+cd (ローカルリポジトリのパス)
+git add .
+git commit -m "Add GitHubActions Workflow"
+git push
+```
+
+<br><br>
+
++ GitHubActionsの実行結果の確認
 

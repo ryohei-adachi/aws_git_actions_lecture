@@ -556,3 +556,14 @@ git push
 
 + GitHubActionsの実行結果の確認
 
+<br>
+
+GitHubサイトにアクセスして、「Actions」タブに移動して、ワークフローが成功していることを確認する
+→緑のチェックマークが出ていればOK
+
+<br>
+
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/7e7095f9-c432-494f-aaa8-d555f15b8e42">
+
+
+

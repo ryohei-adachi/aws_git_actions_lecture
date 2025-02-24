@@ -559,6 +559,9 @@ git push
 <br>
 
 GitHubサイトにアクセスして、「Actions」タブに移動して、ワークフローが成功していることを確認する
+
+<br>
+
 →緑のチェックマークが出ていればOK
 
 <br>
@@ -566,4 +569,16 @@ GitHubサイトにアクセスして、「Actions」タブに移動して、ワ�
 <img width="70%" alt="image" src="https://github.com/user-attachments/assets/7e7095f9-c432-494f-aaa8-d555f15b8e42">
 
 
+<br><br>
 
++ EC2にデプロイされたサイトを閲覧する
+
+<br>
+
+下記URLにクリックして、デプロイされたWebサイトを確認してみる
+
+<br>
+
+```
+http://(EC2のパブリックIPアドレス)
+```

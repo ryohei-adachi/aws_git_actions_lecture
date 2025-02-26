@@ -392,7 +392,7 @@ exit
 
 <br><br>
 
-+ Apacheをインストールする。
++ Apacheをインストールする
 
 <br>
 
@@ -405,6 +405,33 @@ sudo dnf update
 sudo dnf install -y httpd
 sudo chmod 777 -R /var/www/html/
 ```
+
++ Webサーバを起動する
+
+<br>
+
+ターミナルに下記のコマンドを入力する。
+
+<br>
+
+```
+sudo systemctl start httpd
+sudo systemctl enable httpd
+```
+
+<br>
+
+ブラウザを開き、以下のURLをアクセスして、Webページが表示されることを確認する。
+
+<br>
+
+```
+http://(EC2インスタンスのパブリックIPアドレス)
+```
+
+<br>
+
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/3b3f3ed4-d50b-4009-807d-43c3da57ca44">
 
 <br><br>
 
@@ -582,3 +609,9 @@ GitHubサイトにアクセスして、「Actions」タブに移動して、ワ�
 ```
 http://(EC2のパブリックIPアドレス)
 ```
+
+<br><br>
+
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/721782c0-dc80-4d2b-92ad-99762fbca304">
+
+

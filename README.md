@@ -74,11 +74,18 @@ https://github.com/
 
 <br>
 
+※アクセストークンは後に使用する。
+
+<br>
+
 <img src="https://github.com/user-attachments/assets/cbd586d5-5ca0-416f-8adb-5b7a76ceb922" width="70%" />
 
 
 <br>
+
 <br>
+
+
 
 + Gitにユーザ名とメールアドレスを登録
 
@@ -141,7 +148,35 @@ git branch -M main
 git remote add origin https://github.com/(ユーザ名)/(リポジトリ名).git
 git push -u origin main
 ```
+<br>
 
+GitPushするタイミングで下記のようにパスワードを聞かれた場合、
+Usernameにはリポジトリに割り当てられたユーザ名、Passwordには先ほどメモしたアクセストークンを入力する。
+
+```
+Username for 'https://github.com': 
+Password for 'https://xxx@github.com':
+```
+
+<br>
+
++ キーチェーンアクセスへのトークン登録(Macユーザ対象)
+
+<br>
+
+GitPushするたびに、アクセストークンを入力するのが煩わしいため、
+自動でアクセストークン認証を実施する方法を紹介。
+
+<br>
+
+Launchpad > キーチェーンアクセス > 検索ボックスに「github.com」と検索する。
+
+<br>
+github.comの項目に対して、「パスワードを表示」をクリックして、先ほど発行されたアクセストークンを入力する。
+
+<br>
+
+これで、Git操作を行うと、自動でアクセストークン認証をしてくれる。
 <br>
 <br>
 

@@ -169,14 +169,26 @@ GitPushするたびに、アクセストークンを入力するのが煩わし�
 
 <br>
 
-Launchpad > キーチェーンアクセス > 検索ボックスに「github.com」と検索する。
+Launchpad(あるいは、Spotlight) > キーチェーンアクセス > 検索ボックスに「github.com」と検索する。
+
+<br>
+<img src="https://github.com/user-attachments/assets/e530a66b-eb09-430f-b6b0-2048940f9aa4" width="70%" />
 
 <br>
 github.comの項目に対して、「パスワードを表示」をクリックして、先ほど発行されたアクセストークンを入力する。
 
 <br>
 
-これで、Git操作を行うと、自動でアクセストークン認証をしてくれる。
+
+<img src="https://github.com/user-attachments/assets/14132712-525d-49c9-a57e-22cb9282e63a" width="70%" />
+
+<br>
+
+<img src="https://github.com/user-attachments/assets/9a862c63-4eef-4463-b1b9-9900e63be169" width="70%" />
+
+<br>
+
+以上で、Git操作を行うと、自動でアクセストークン認証をしてくれる。
 <br>
 <br>
 

@@ -213,274 +213,151 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br><br>
 
-+ マネジメントコンソールの検索部分に「EC2」と入力・検索を行い、EC2サービスを選択する。
++ マネジメントコンソールの検索部分に「S3」と入力・検索を行い、S3サービスを選択する。
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/2704af17-6537-492f-bd55-61f00c010825" width="70%" />
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/f12186eb-be0b-4460-8c98-ac2ab80b7d2a" width="70%" />
 
 <br><br>
 
-+ 左メニューの「インスタンス」を選択して、「インスタンスを起動」をクリックする。
+<br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/17c66e10-3095-41e4-9baf-dd799a6c5549" width="70%" />
++ S3トップ画面の「バケットの作成」をクリックする
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/6025e6ac-d8d2-4207-a74b-96a10b8a4af5" width="70%" />
-
-<br><br><br>
-
-+ 「Launch an instance」では下記の内容を入力・選択する
-  + 名前: 好きなサーバ名を入力してください
-  + Amazon マシンイメージ (AMI): Amazon Linux 2023
-  + インスタンスタイプ: t2.micro
-  + ネットワークの設定: パブリックIPの自動割り当てを「無効」から「有効」に変えてください
-  + キーペア (ログイン) : 新しいキーペアの作成をクリックして、キーペアを取得してください(ログイン時に使用)
-    +  キーペア名: 好きな名前を入力してください
-    +  キーペアのタイプ: RSA
-    +  プライベートキーファイル形式: 「.pem」
-      
-<br><br><br>
-
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/05e292b4-55e6-48bd-addd-05e5a4ee682a" width="70%" />
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/0fc09c94-edbb-494f-9b1f-865ec0784724" width="70%" />
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/26f81d98-07d2-482e-b37f-545b5e72b1cb" width="70%" />
++ 下記の項目の入力を行う
+  + バケット名: (好きな名前) ※但し、世界中の全AWSユーザ間で唯一(一意)の名前にしないといけない
+  + パブリックアクセスをすべてブロックのチェックを外す
+  + 現在の設定により、このバケットとバケット内のオブジェクトが公開される可能性があることを承認します。にチェックを入れる
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/ecc10718-aa70-4d39-b9fa-bd925ce0855b" width="70%" />
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/68f0cf77-5fdc-4f0c-b30f-13afe7707195" width="70%" />
 
 <br><br>
 
-
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/71602f1e-f76d-49af-9ba6-c0a4c516c517" width="70%" />
-
-<br><br>
-
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/fa4d93e0-3cdd-4857-861f-9e032e38ca76" width="70%" />
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/f46a6745-6d91-4101-8711-b77bfd3e4586" width="70%" />
 
 <br><br>
 
-必要項目を入力をした後、「キーペアを作成」をクリックする。
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/abed2e67-9b69-4fd3-af1e-c50863840f2a" width="70%" />
+
+<br><br>
+上記以外の項目は、変更なしで、「バケットの作成」をクリックする
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/63254121-0875-47eb-a8c0-6c0e7958e3bd" width="70%" />
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/0f5bcebb-a4cc-428c-8883-d505a1a232f2" width="70%" />
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/0a398555-165a-44e3-a2e3-99fe68664a05" width="70%" />
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/f62b5885-ae68-41c0-b00e-c4188d4c91ce" width="70%" />
 
 <br><br>
 
-ネットワークの設定ボタンをクリックし、パブリックIPの自動割り当てを「有効」にする。
-
-+ 上記の内容の入力が出来ましたら、「インスタンスを起動」をクリックする。
++ 作成したバケットを選択して、「プロパティ」を選択する
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/027944c3-56a1-4af5-b2fb-926cc96ef7a5" width="70%" />
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/e300f69a-53cb-445c-ae84-78195ed80a3d" width="70%" />
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/84c14c41-10c4-4426-8f9f-7f7cee0712c2" width="70%" />
++ 一番下にある「静的ウェブサイトホスティング」の編集ボタンをクリックする
 
 <br><br>
 
-+ 「すべてインスタンスを表示」を選択して、EC2インスタンスが作成されていることを確認する。
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/3b211eb9-8fb9-48dd-a91b-3bb2df5b2136" width="70%" />
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/96175ed0-8179-4b81-b0be-32a5dbdd3809" width="70%" />
++ 「静的ウェブサイトホスティングを編集」において、静的ウェブサイトホスティングを「有効」にする
 
 <br><br>
 
-+ セキュリティグループを設定する
-
-作成したインスタンスを選択した状態で、「セキュリティタブ」を開き、セキュリティグループを選択する。
-⇒ 「sg-XXXXXXXXX」というセキュリティグループIDがEC2インスタンスに付与されている
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/31e09796-5917-4b20-bcfe-4ec587c09fbf" width="70%" />
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/c163515d-366b-4ae7-a47d-61923e0f4bad" width="70%" />
-
-<br>
-
-セキュリティグループの設定画面を開き、「インバウンドのルールを編集」をクリックする
-
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/cfcaf86d-227c-4f50-90c6-7172533f248a" width="70%" />
++ インデックスドキュメントに「index.html」と入力する
 
 <br><br>
 
-以下のルールを追加して、「ルールを保存」ボタンをクリックしてください。
-  + タイプ: SSH
-    + ソース: Anywhere-IPv4
-  + タイプ: HTTP
-    + ソース: Anywhere-IPv4
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/bc49c7c5-4827-4676-87f7-9524a61d4d1c" width="70%" />
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/bc998a8c-580f-4b45-97e2-cb4e502a502d" width="70%" />
++ 「変更の保存」をクリックする
 
 <br><br>
 
-+ EC2インスタンスにssh接続する
-
-EC2インスタンスのパブリックIPアドレスを確認する。
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/54c4c4c4-f213-487c-9c2f-457756909613" width="70%" />
 
 <br><br>
 
- <img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/6a27c26e-1eb6-49d9-b2f4-053dac0427c5" width="70%" />
-
- ### Windowsユーザの方
-
-<br>
-
-Tera Term5を開き、ホストにEC2インスタンスのパブリックIPアドレスを入力して、OKをクリックする。
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/7da1b415-dd08-4a90-9186-a5251d812e0c" width="70%" />
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/1f36595f-3aec-4143-8288-d1e1b2609e94" width="50%" />
++ 作成したバケットの「アクセス許可」の設定を選択する
 
 <br><br>
 
-続行をクリックする。
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/f854471f-20a2-473c-9323-4ce11da08b23" width="70%" />
 
 <br><br>
 
- <img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/3070e9e4-f7dd-497b-807a-747d28b307b9" width="50%" />
++ 「バケットポリシー」の「編集」をクリック
 
 <br><br>
 
-ユーザ名に「ec2-user」、認証方式は「RSA/DSA/ECDSA/ED25519鍵を使う」を選択する。
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/62800372-5cef-4bae-a325-d77025d63121" width="70%" />
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/7a691b46-2d8f-47bc-8bbb-70d53c1e29a9" width="50%" />
-
-<br><br>
-
-秘密鍵の個所に、EC2インスタンス作成時に生成したキーペア(.pemファイル)を指定する。
-
-<br><br>
-
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/4e289e7a-a83b-4b6f-a47d-58174764999e" width="50%" />
-
-<br><br>
-
- <img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/e7aca950-e189-40d5-b891-4b692663c529" width="50%" />
-
-<br><br>
-
- <img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/67ca8b9b-dd7f-4dff-b31a-87c053732fea" width="50%" />
-
-「OK」をクリックして、EC2インスタンスに入れることを確認する。
-
-<br><br>
-
-<img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/f8dfc541-f812-4cff-8cfa-a1c0a4065b10" width="50%" />
-
-<br><br>
-
-### Macユーザの方
-
-Launchpadから「ターミナル」を開く。
-
-<img width="70%" alt="image" src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/8c8ee8a8-c08b-4d9f-98db-7d7a6a447831">
-
-<br><br>
-
-<img width="70%" alt="image" src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/dd2dcb30-f638-49f0-abc4-9534aa0caf29">
-
-<br><br>
-
-ターミナル上に以下のコマンドを入力する。
-　⇒ ダウンロードしたキーペアを「~/.ssh」配下に移動させて、権限変更を行う。
-
++ バケットポリシーの「ポリシー」に下記の内容を入力する
+  
 <br><br>
 
 ```
-mv /Users/(Macのユーザ名)/Downloads/（キーペア名）.pem  ~/.ssh
-chmod 600 /Users/(Macのユーザ名)/.ssh/(キーペア名).pem
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::(バケット名)/*"
+        }
+    ]
+}
 ```
 
 <br><br>
 
-<img width="70%" alt="image" src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/eb021bfb-197b-47dd-882e-ca31e0c33432">
+※(バケット名)には作成したバケット名を入力する
 
 <br><br>
 
-ターミナル上に以下のコマンドを入力する。
-　⇒ sshコマンドを使って、EC2インスタンスにログインする。
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/c60d31ff-03b6-4f71-bde0-57802d1e34f8" width="70%" />
 
 <br><br>
 
-```
-ssh -i /Users/(Macのユーザ名)/.ssh/(キーペア名).pem ec2-user@(EC2のパブリックIPアドレス)
-```
++ ポリシーの記載が完了したら、「変更の保存」をクリックする
 
 <br><br>
 
-「Are you sure you want to continue connecting (yes/no/[fingerprint])?」というメッセージが出た場合、「Yes」と入力する。
-
-
-<img width="70%" alt="image" src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/b5c6be6a-d994-4e3c-8619-332ba186ea51">
+<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/c4da764c-ddd5-4a49-9b91-7127db407dfd" width="70%" />
 
 <br><br>
 
-EC2インスタンスからログアウトしたい時は以下のコマンドを実行する。
-
-```
-exit
-```
-
-<br><br>
-
-+ Apacheをインストールする
-
-<br>
-
-ターミナルに下記のコマンドを入力する。
-
-<br>
-
-```
-sudo dnf update
-sudo dnf install -y httpd
-sudo chmod 777 -R /var/www/html/
-```
-
-+ Webサーバを起動する
-
-<br>
-
-ターミナルに下記のコマンドを入力する。
-
-<br>
-
-```
-sudo systemctl start httpd
-sudo systemctl enable httpd
-```
-
-<br>
-
-ブラウザを開き、以下のURLをアクセスして、Webページが表示されることを確認する。
-
-<br>
-
-```
-http://(EC2インスタンスのパブリックIPアドレス)
-```
-
-<br>
-
-<img width="70%" alt="image" src="https://github.com/user-attachments/assets/3b3f3ed4-d50b-4009-807d-43c3da57ca44">
-
-<br><br>
 
 # ③ GitHub Actionsによる自動デプロイ機能作成
 

@@ -194,7 +194,7 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 + GitHubにアクセスして、テストファイルがアップロードされていることを確認する
 
-# ② AWS EC2の構築
+# ② AWSの設定
 
 <br>
 
@@ -209,7 +209,14 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br><br>
 
+
+
+
 <img src="https://github.com/ryohei-adachi/aws_lecture/assets/75190594/a5490b76-9d0d-4306-a100-3adc8b9fc3b4" width="70%" />
+
+<br>
+
+## S3バケットの構築
 
 <br><br>
 
@@ -360,7 +367,35 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br>
 
-+ IAMの作成
+## IAMの作成
+
+<br>
+
++ AWSの検索ボックスに、IAMと入力し、IAMサービスに移動する
+
+<br>
+
+<img src="https://github.com/user-attachments/assets/61d70580-3772-444d-b74f-693435045c32"" width="70%" />
+
+<br>
+
++ 左メニューのユーザーを選択する
+
+<br>
+
+<img src="https://github.com/user-attachments/assets/0cecfd09-0662-41b1-b63c-7bfc8b14df45" width="70%" />
+
+<br>
+
++ 「ユーザーの作成」ボタンをクリックする
+
+<br>
+  
+<img src="https://github.com/user-attachments/assets/fc509396-679c-4fa1-8094-f601a528f586" width="70%" />
+
+
+
+
 
 
 # ③ GitHub Actionsによる自動デプロイ機能作成

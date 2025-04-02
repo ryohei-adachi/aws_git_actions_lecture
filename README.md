@@ -358,6 +358,10 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br><br>
 
+<br>
+
++ IAMの作成
+
 
 # ③ GitHub Actionsによる自動デプロイ機能作成
 
@@ -389,13 +393,11 @@ GitHubのページから[Settings] > [Secrets and variables] > [Actions]の順�
 
 | Name | Secret |
 | ---- | ---- |
-| EC2_HOST | AWS EC2のIPアドレス |
-| EC2_SSH_KEY | AWS EC2の秘密鍵(pemファイル)の中身 |
-| EC2_USER | "ec2-user"と入力 |
+| AWS_ACCESS_KEY_ID | 作成したIAMのアクセスキー |
+| AWS_SECRET_SCCESS_KEY | 作成したIAMのシークレットキー |
+| S3_BUCKET_NAME | 作成したS3のバケット名 |
 
-<br>
 
-AWS EC2の秘密鍵の入力については、余計な改行を含めないこと。
 
 <br>
 
@@ -432,7 +434,7 @@ AWS EC2の秘密鍵の入力については、余計な改行を含めないこ�
 <br>
 
 ```
-name: Deploy to AWS EC2
+name: Deploy to AWS S3 Host
 on:
   push:
     branches:
@@ -445,20 +447,16 @@ jobs:
       - name: リポジトリチェックアウト
         uses: actions/checkout@v4
 
-      - name: SSH設定
-        run: |
-          echo "${{ secrets.EC2_SSH_KEY }}" > private_key.pem
-          chmod 600 private_key.pem
-          mkdir ~/.ssh
-          ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+      - name: AWS認証
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+           aws-secret-access-key: ${{ secrets.AWS_SECRET_SCCESS_KEY }}
+           aws-region: ap-northeast-1 #東京リージョンを指定
         
-      - name: EC2にHTML/CSSをデプロイ
+      - name: S3にアップロード
         run:
-          rsync -rlOtcv --delete -e "ssh -oStrictHostKeyChecking=no -i private_key.pem" ./web/ ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/html/
-        
-      - name: EC2でApacheを再起動（オプション）
-        run: |
-          ssh -i private_key.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "sudo systemctl restart httpd"
+          aws s3 sync ./web/ s3://${{ secrets.S3_BUCKET_NAME }}/ --delete
 ```
 
 <br><br>
@@ -522,17 +520,21 @@ GitHubサイトにアクセスして、「Actions」タブに移動して、ワ�
 
 <br><br>
 
-+ EC2にデプロイされたサイトを閲覧する
++ S3にデプロイされたサイトを閲覧する
 
 <br>
 
-下記URLにクリックして、デプロイされたWebサイトを確認してみる
+再びバケットの「プロパティ」タブを開き、「静的ウェブホスティング」のバケットウェブサイトエンドポイントURLを確認する
 
 <br>
 
 ```
-http://(EC2のパブリックIPアドレス)
+http://(バケット名).s3-website-ap-northeast-1.amazonaws.com
 ```
+
+<br>
+
+デプロイされたサイトが確認できる
 
 <br><br>
 

@@ -435,9 +435,10 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br>
 
-<img src="https://github.com/user-attachments/assets/f41cf1c6-0a4f-46d7-bdaa-e82b79469c08" width="70%" />
+<img src="https://github.com/user-attachments/assets/4d06565d-1a56-4796-8633-50015d3cbfac" width="70%" />
 
 <br>
+<img src="https://github.com/user-attachments/assets/25a29413-0512-4cb0-9c22-94808c17324b" width="70%" />
 
 
 

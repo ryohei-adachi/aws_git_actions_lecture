@@ -603,7 +603,7 @@ GitHubサイトにアクセスして、「Actions」タブに移動して、ワ�
 
 <br>
 
-<img width="70%" alt="image" src="https://github.com/user-attachments/assets/7e7095f9-c432-494f-aaa8-d555f15b8e42">
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/20e474d8-9e73-4e8f-8ff0-9c42dcf32e3f">
 
 
 <br><br>
@@ -613,6 +613,17 @@ GitHubサイトにアクセスして、「Actions」タブに移動して、ワ�
 <br>
 
 再びバケットの「プロパティ」タブを開き、「静的ウェブホスティング」のバケットウェブサイトエンドポイントURLを確認する
+
+
+<br>
+
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/33073971-eead-4899-a4b0-890941bef08f">
+
+<br>
+
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/aabfbc1e-2a93-440d-9cbe-b99381c62908">
+
+
 
 <br>
 
@@ -626,6 +637,6 @@ http://(バケット名).s3-website-ap-northeast-1.amazonaws.com
 
 <br><br>
 
-<img width="70%" alt="image" src="https://github.com/user-attachments/assets/721782c0-dc80-4d2b-92ad-99762fbca304">
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/81bab87d-130c-4e16-a0dd-4087f649d1c9">
 
 

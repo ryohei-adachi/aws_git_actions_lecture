@@ -382,7 +382,7 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br>
 
-<img src="https://github.com/user-attachments/assets/61d70580-3772-444d-b74f-693435045c32"" width="70%" />
+<img src="https://github.com/user-attachments/assets/61d70580-3772-444d-b74f-693435045c32" width="70%" />
 
 <br>
 
@@ -487,11 +487,13 @@ GitHubのページから[Settings] > [Secrets and variables] > [Actions]の順�
 
 <br>
 
-<img width="70%" alt="image" src="https://github.com/user-attachments/assets/9f1c05d8-74e6-4da0-bc58-982d36e9a95f">
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/c8026284-58c2-4a95-b4ef-6b7caf5f3566">
+
 
 <br>
 
-<img width="70%" alt="image" src="https://github.com/user-attachments/assets/3230f2bd-bfcf-42d7-9c0a-b065a71652ff">
+
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/e4a5539c-f67a-440b-ae43-30cb6ce94489">
 
 <br>
 

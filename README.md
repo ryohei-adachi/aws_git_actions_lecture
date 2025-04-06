@@ -245,7 +245,8 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/68f0cf77-5fdc-4f0c-b30f-13afe7707195" width="70%" />
+<img src="https://github.com/user-attachments/assets/dfb63323-5436-4af8-a813-eb19ac48b605" width="70%" />
+
 
 <br><br>
 
@@ -264,7 +265,9 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/f62b5885-ae68-41c0-b00e-c4188d4c91ce" width="70%" />
+<img src="https://github.com/user-attachments/assets/4e08c25f-41bc-479b-9584-af6bd228df07" width="70%" />
+
+
 
 <br><br>
 
@@ -272,7 +275,7 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/e300f69a-53cb-445c-ae84-78195ed80a3d" width="70%" />
+<img src="https://github.com/user-attachments/assets/1e06a82b-40d4-4d1b-86ea-a55b351a5827" width="70%" />
 
 <br><br>
 
@@ -288,7 +291,7 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/31e09796-5917-4b20-bcfe-4ec587c09fbf" width="70%" />
+<img src="https://github.com/user-attachments/assets/eb14f079-33a1-4d6d-89c3-76e9aa80de91" width="70%" />
 
 <br><br>
 
@@ -308,7 +311,9 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/7da1b415-dd08-4a90-9186-a5251d812e0c" width="70%" />
+<img src="https://github.com/user-attachments/assets/cae057fc-cf03-48ad-a12b-8ea365247d48" width="70%" />
+
+
 
 <br><br>
 
@@ -316,7 +321,7 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/f854471f-20a2-473c-9323-4ce11da08b23" width="70%" />
+<img src="https://github.com/user-attachments/assets/89841a78-9d40-4ce9-9ce6-3a68d4dd50cb" width="70%" />
 
 <br><br>
 
@@ -353,7 +358,8 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/c60d31ff-03b6-4f71-bde0-57802d1e34f8" width="70%" />
+<img src="https://github.com/user-attachments/assets/c168998f-61e2-48a9-8bcc-5cfa1737ef21" width="70%" />
+
 
 <br><br>
 
@@ -361,7 +367,8 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 
 <br><br>
 
-<img src="https://github.com/ryohei-adachi/aws_lectureaws_lecture2/assets/75190594/c4da764c-ddd5-4a49-9b91-7127db407dfd" width="70%" />
+<img src="https://github.com/user-attachments/assets/e3ef4f20-115a-4fe2-a5c4-c088a40969b2" width="70%" />
+
 
 <br><br>
 

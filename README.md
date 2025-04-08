@@ -150,6 +150,7 @@ git push -u origin main
 ```
 <br>
 
+
 GitPushするタイミングで下記のようにパスワードを聞かれた場合、
 Usernameにはリポジトリに割り当てられたユーザ名、Passwordには先ほどメモしたアクセストークンを入力する。
 
@@ -193,6 +194,29 @@ github.comの項目に対して、「パスワードを表示」をクリック�
 <br>
 
 + GitHubにアクセスして、テストファイルがアップロードされていることを確認する
+
+
+<br><br>
+
+```
+git push origin mianで、下記のエラーが発生した場合、「git remote add origin (GitリポジトリURL).git」の登録が誤っている可能性があります。
+
+fatal:'(登録したURL)' does not appear to be a git repository
+fatal: Cloud not read from remote repository
+
+Please make sure you have the correct access rights
+and the repository exits.
+
+
+・まず、既存のoriginのURLが正しいか確認しましょう
+
+git remote -v
+
+・誤って登録されていた場合、既存のoriginを削除して登録し直しましょう
+git remote remove origin
+git remote add origin https://github.com/(ユーザ名)/(リポジトリ名).git
+
+```
 
 # ② AWSの設定
 
